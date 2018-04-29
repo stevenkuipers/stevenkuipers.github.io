@@ -89,7 +89,7 @@ nav{
 
 nav ul {
     position: absolute;
-    transform: translate(-90px, 0);
+    transform: translate(-70px, 0);
 }
 
 nav ul li {
@@ -122,6 +122,9 @@ h1 {
 
 .content article {
     padding: 50px 0;
+    /*max-width: 640px;
+    margin: 0 auto;
+    text-align: center;*/
 }
 
 img{
@@ -130,7 +133,9 @@ img{
     z-index: 1;
 }
 
+
 /* Showcase grid */
+
 .showcase-gallery .figure {
     overflow: hidden;
     margin-bottom: 20px;
@@ -209,6 +214,7 @@ ul a {
 
 /* Contact Form */
 
+
 .contact-form a{
     color: red;
     text-decoration: none;
@@ -234,6 +240,7 @@ footer span {
     font-size: 1rem;
     margin-right: 20px;
 }
+
 
 .fa-heart {
     color: black;
