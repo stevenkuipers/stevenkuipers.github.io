@@ -11,7 +11,7 @@ $(document).ready(function(){
 	    }, 900, 'swing');
 	});
 });
-
+   
 //Event listener for menu button toggle
 $('#toggle-menu-button').on('click', function(){
 	$.each($("ul.nav li"), function(){

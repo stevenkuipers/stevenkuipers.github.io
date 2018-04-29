@@ -77,7 +77,6 @@ header {
 
 .on-top {
     z-index: 2;
-
 }
 
 nav{
@@ -194,7 +193,6 @@ ul a {
 }
 
 /* Fixed image background*/
-
 .fixed-image {
     width: 100%;
     height: 400px;
