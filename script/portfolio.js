@@ -2,15 +2,13 @@ $(document).ready(function(){
     // Animate scroll behaviour internal links
 	$('a[href^="#"]').on('click',function (e) {
 	    e.preventDefault();
-
 	    var target = this.hash;
 	    var $target = $(target);
-
-	    $('html, body').stop().animate({
-	        'scrollTop': $target.offset().top -70
-	    }, 900, 'swing', function () {
+	    $('html, body').stop(function () {
 	        window.location.hash = target;
-	    });
+	    }).animate({
+	        'scrollTop': $target.offset().top -70
+	    }, 900, 'swing');
 	});
 });
 
@@ -31,7 +29,7 @@ var linkDict = {
 	'to-do' : 'https://developer.mozilla.org/',
 	'tribute' : 'https://developer.mozilla.org/',
 };
-
+	// Set sizing for pop ups, not mobile friendly
 $('.figure').on('click', function(){
 	var key = $(this).children('span').attr('name');
 	var w = 800;
